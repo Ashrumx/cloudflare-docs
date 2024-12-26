@@ -42,7 +42,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.domains[*] in $<LIST-UUID>)",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -76,7 +76,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.security_category[*] in {68 178 80 83 176 175 117 131 134 151 153})",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -109,7 +109,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.content_category[*] in {17 85 87 102 157 135 138 180 162 32 169 177 128 15 115 119 124 141 161})",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -142,7 +142,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(app.type.ids[*] in {25})",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -175,7 +175,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.dst.geo.country[*] in {\"AF\" \"BY\" \"CD\" \"CU\" \"IR\" \"IQ\" \"KP\" \"MM\" \"RU\" \"SD\" \"SY\" \"UA\" \"ZW\"})",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -210,7 +210,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.domains[*] matches \"[.](cn|ru)$\") or any(dns.domains[*] matches \"[.](rest|hair|top|live|cfd|boats|beauty|mom|skin|okinawa)$\") or any(dns.domains[*] matches \"[.](zip|mobi)$\")",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -244,7 +244,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "not(any(dns.domains[*] in $<LIST-UUID>)) and any(dns.domains[*] matches \".*okta.*\\|.*cloudflare.*\\|.*mfa.*\\|.sso.*\")",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -277,7 +277,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.domains[*] in $<LIST-UUID>)",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -310,7 +310,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.resolved_ips[*] in $<LIST-UUID>)",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -343,7 +343,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.content_category[*] in {182})",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -376,7 +376,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.content_category[*] in {145})",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -481,7 +481,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "any(dns.content_category[*] in {149})",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -523,7 +523,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "dns.query_rtype == \"AAAA\" and any(dns.domains[*] == \"example.com\")",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
@@ -557,7 +557,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/rule\
     "dns"
   ],
   "traffic": "dns.query_rtype == \"A\" and any(dns.domains[*] == \"example.com\")",
-  "identity": "",
+  "identity": ""
 }'
 ```
 
